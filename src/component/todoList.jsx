@@ -3,13 +3,13 @@ let contents = '';
 const handleSubmit = (e) => {
     e.preventDefault();
 
-    const newElement = document.createElement('div');
+    const newElement = document.createElement('li');
     newElement.textContent = contents;
 
     const fragment = document.createDocumentFragment();
     fragment.appendChild(newElement);
 
-    const parentElement = document.getElementById('parent');
+    const parentElement = document.querySelector('ul');
     parentElement.appendChild(fragment);
 
     const getKKK = document.getElementById('kkk');
