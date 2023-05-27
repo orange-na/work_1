@@ -18,8 +18,8 @@ function App() {
     </header>
 
     <section id="home" className="text-gray-700 border-b border-gray-200 pb-5">
-      <div className="container flex mx-auto px-5 flex-col md:flex-row items-center">
-        <div className="md:1/2 flex-grow">
+      <div className="container flex mx-auto px-5 flex-col md:flex-row items-center text-center md:text-left">
+        <div className="md:1/2 flex-grow mb-5 md:mb-0">
           <h1 className="font-medium text-3xl text-gray-900 mb-2">
               Hi!
               <br />
@@ -47,8 +47,8 @@ function App() {
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, dolor dolores veniam voluptatibus tempora dignissimos sit expedita enim. Sed accusantium dolore non dolorem porro incidunt cum eum veniam suscipit iure aut ipsa a alias tenetur enim provident quam animi unde, amet quos. Autem ab quas iure, rem nam repellendus optio excepturi, cupiditate enim animi est hic perspiciatis quo! Recusandae illo assumenda dolores id exercitationem nostrum, est fuga animi fugit fugiat? Magni deserunt eveniet iure deleniti quibusdam reprehenderit, totam laboriosam illum tempore explicabo culpa possimus hic, nostrum officiis tempora laborum in eum labore quam quaerat esse voluptatem ducimus earum. Fuga, in!</p>
         </div>
         {/* container */}
-        <div className="container flex mt-8">
-          <div className="w-1/3 bg-gray-200 rounded-lg p-5 m-4">
+        <div className="container flex mt-8 flex-col items-center md:flex-row">
+          <div className="md:w-1/3 bg-gray-200 rounded-lg p-5 m-4 box-border">
             <div className="flex items-center text-center mb-2">
               <div className="bg-green-500 p-1 rounded-full text-white mr-3">
               <svg
@@ -84,7 +84,7 @@ function App() {
             </svg>
             </a>
           </div>
-          <div className="w-1/3 bg-gray-200 rounded-lg p-5 m-4">
+          <div className="md:w-1/3 bg-gray-200 rounded-lg p-5 m-4 box-border">
             <div className="flex items-center text-center mb-2">
               <div className="bg-green-500 p-1 rounded-full text-white mr-3">
               <svg
@@ -120,7 +120,7 @@ function App() {
             </svg>
             </a>
           </div>
-          <div className="w-1/3 bg-gray-200 rounded-lg p-5 m-4">
+          <div className="md:w-1/3 bg-gray-200 rounded-lg p-5 m-4 box-border">
             <div className="flex items-center text-center mb-2">
               <div className="bg-green-500 p-1 rounded-full text-white mr-3">
               <svg
@@ -161,14 +161,14 @@ function App() {
     </section>
 
     <section id="skills" className="text-gray-700 border-b border-gray-200 pb-9 mt-20">
-      <div className="container mx-auto px-5 flex items-center">
+      <div className="container mx-auto px-5 flex items-center flex-col md:flex-row">
         {/* left side */}
-        <div className="w-1/2 mr-5">
+        <div className="md:w-1/2 mr-5">
           <img src="./img/pc.jpg" alt="" className=""/>
         </div>
         {/* right side */}
-        <div className="w-1/2">
-          <h2 className="mb-6 text-2xl text-gray-900">My Skills</h2>
+        <div className="w-full md:w-1/2">
+          <h2 className="mb-6 text-2xl text-gray-900 text-center md:text-left">My Skills</h2>
           <h3>HTML</h3>
           <div className="bg-green-200 mb-2">
             <div className="bg-green-500 w-2/3 text-white text-center text-xs p-1">85%</div>
