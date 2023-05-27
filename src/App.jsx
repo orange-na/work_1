@@ -1,4 +1,5 @@
-
+import { Count } from './component/Count'
+import { TodoList } from './component/todoList'
 
 function App() {
   return (
@@ -186,6 +187,20 @@ function App() {
             <div className="bg-green-500 w-2/3 text-white text-center text-xs p-1">85%</div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section className='border-b border-gray-200'>
+      <div className='container items-center flex justify-center my-10'>
+        <Count />
+        <Count />
+      </div>
+    </section>
+
+    <section className='border-b border-gray-200'>
+      <div className=''>
+        <h1 className='mb-6 text-2xl text-gray-900 text-center'>TodoList</h1>
+        <TodoList />
       </div>
     </section>
     </>
