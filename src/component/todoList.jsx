@@ -1,30 +1,38 @@
+let contents = '';
 
-function TodoItem(props) {
-    const { text, completed } = props;
-    return(
-        <div className="flex my-3">
-            <p>・{ text }</p>
-            <p className="text-blue-600 font-bold">: {completed ? '完了' : '未完了'}</p>
-        </div>
-    )
+const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const newElement = document.createElement('div');
+    newElement.textContent = contents;
+
+    const fragment = document.createDocumentFragment();
+    fragment.appendChild(newElement);
+
+    const parentElement = document.getElementById('parent');
+    parentElement.appendChild(fragment);
+
+    const getKKK = document.getElementById('kkk');
+    getKKK.value = ''
+
+}
+
+const changed = (e) => {
+    contents = e.target.value;
+    console.log(contents);
 }
 
 
-export function TodoList() {
-    const todos = [
-        {text: 'Reactの勉強', completed: true},
-        {text: 'アプリの作成', completed: false},
-        {text: 'ポートフォリオの制作', completed: false},
-    ];
 
+
+export function TodoList() {
 
     return (
         <div>
-            {todos.map((todo, index) => {
-                return (
-                    <TodoItem key={index} text={todo.text} completed={todo.completed}/>
-                )
-            })}
+            <form onSubmit={handleSubmit}>
+                <input id="kkk" onChange={changed}  type="text" className='border-2 py-1 px-4 rounded-md' placeholder="ここに入力して下さい"/>
+                <input type="submit" className='bg-red-400 py-1 px-4 rounded-md ml-3 hover:bg-red-600 duration-200 text-white'/>
+            </form>
         </div>       
     )
   }

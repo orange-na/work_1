@@ -198,9 +198,12 @@ function App() {
     </section>
 
     <section className='border-b border-gray-200'>
-      <div className=''>
+      <div className='text-center'>
         <h1 className='mb-6 text-2xl text-gray-900 text-center'>TodoList</h1>
         <TodoList />
+      </div>
+      <div className='text-center mt-7'>
+        <div id='parent' className='text-xl '></div>
       </div>
     </section>
     </>
